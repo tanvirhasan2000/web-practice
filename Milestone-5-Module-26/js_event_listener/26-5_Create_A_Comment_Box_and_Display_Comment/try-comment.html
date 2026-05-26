@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trying comment </title>
+</head>
+<body>
+    <div id="comment-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, doloribus! Rem temporibus commodi, molestias nemo quae sequi illum eos autem vero recusandae cum deleniti sit magni ea? Veritatis, fuga placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, doloribus! Rem temporibus commodi, molestias nemo quae sequi illum eos autem vero recusandae cum deleniti sit magni ea? Veritatis, fuga placeat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, doloribus! Rem temporibus commodi, molestias nemo quae sequi illum eos autem vero recusandae cum deleniti sit magni ea? Veritatis, fuga placeat.</p>
+    </div>
+    <div>
+        <textarea name="Comment" id="comment-box"></textarea>
+        <br>
+        <button id="btn-post">Submit </button>
+    </div>
+
+    <Script>
+        document.getElementById('btn-post').addEventListener('click',function(){
+            const comment=document.getElementById('comment-box');
+            const commenttext= comment.value;
+            //step -3: set the comment on the feed 
+
+            const commentContainer = document.getElementById('comment-container');
+            const tag=document.createElement('p');
+            tag.innerText = commenttext;
+            commentContainer.appendChild(tag);
+            comment.value =' ';
+        })
+    </Script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id>    Exploring event bubble </h1>
+    <section id="section">
+        <ul id="list">
+            <li id="li1">Lorem ipsum </li>
+            <li id="li2">Lorem ipsum dolor sit.</li>
+            <li id="li3">Lorem, ipsum dolor.</li>
+            <li id="li4">Lorem, ipsum dolor.</li>
+        </ul>
+    </section>
+
+    <script>
+        document.getElementById('li2').addEventListener('click',function(){
+            console.log('Second item list clicked ');
+        })
+    </script>
+</body>
+</html>

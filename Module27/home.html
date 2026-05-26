@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Payoo Home</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@5"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body class="bg-base-100 text-base-content">
+        <main class="flex justify-center">
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                    <div class="artboard artboard-demo phone-3 bg-base-100 text-base-content">
+                        <div class="stats shadow bg-base-100 text-base-content">
+                            <div class="stat">
+                                <div class="stat-value" id="account-balance">8900</div>
+                                <div class="stat-desc">Available Balance</div>
+                            </div>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <!-- user action buttons -->
+                        <div>
+                            <button class="btn btn-lg" id="btn-show-add-money">Add Money</button>
+                            <button class="btn btn-lg" id="btn-show-cashout">Cash Out</button>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <!-- add money form -->
+                        <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="label">Amaount</label>
+                                    <input
+                                        id="input-add-money"
+                                        type="text"
+                                        class="input"
+                                        placeholder="Amount"
+                                    />
+                                    <label class="label">Pin</label>
+                                    <input
+                                        id="input-pin-number"
+                                        type="pin"
+                                        class="input"
+                                        placeholder="pin Number"
+                                    />
+                                    
+                                    <button class="btn btn-neutral mt-4" id="btn-add-money">Add Money </button>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <!-- add money form end -->
+                         <!-- Cash Out start-->
+                        <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="label">Amaount</label>
+                                    <input
+                                        id="input-cashout-money"
+                                        type="text"
+                                        class="input"
+                                        placeholder="Amount"
+                                    />
+                                    <label class="label">Pin</label>
+                                    <input
+                                        id="input-cashout-pin-number"
+                                        type="pin"
+                                        class="input"
+                                        placeholder="pin Number"
+                                    />
+                                    
+                                    <button class="btn btn-neutral mt-4" id="btn-cashout-money">Cash Out </button>
+                                </fieldset>
+                            </div>
+                        </div>
+                         <!-- Cash Out End-->
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="js/home.js"></script>
+        <script src="js/cashOut.js"></script>
+        <script src="js/features.js"></script>
+    </body>
+</html>

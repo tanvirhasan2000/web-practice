@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Summary</title>
+</head>
+<body>
+    <h1>Exploring dom events </h1>
+    <button onClick="makeGreen()"> Make Green </button>
+    <button id="make-yellow"> Make Yellow</button>
+    <br>
+    <input type="email" id="user-email">
+
+    <script>
+        function makeGreen(){
+            document.body.style.backgroundColor='green';
+        }
+
+        // system 2 using id 
+        document.getElementById('make-yellow').addEventListener('click',function(){
+            document.body.style.backgroundColor='yellow';
+        })
+    </script>
+</body>
+</html>

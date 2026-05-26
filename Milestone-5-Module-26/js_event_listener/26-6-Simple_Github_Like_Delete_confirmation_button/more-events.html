@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more Events</title>
+</head>
+<body>
+    <h1>Explore more events</h1>
+    <button id="btn-more">Events</button>
+    <input type="text" id="text-field">
+
+    <script>
+        //---- mouse enter ------
+        // document.getElementById('btn-more').addEventListener('mouseenter', function(){
+        //     console.log('Mouse Enteres');
+        // });
+
+        // ------ Mouse move 
+        //  document.getElementById('btn-more').addEventListener('mousemove', function(){
+        //     console.log('Mouse Moving ');
+        // });
+        document.getElementById('text-field').addEventListener('focus',function(){
+            console.log('focusing');
+        })
+        document.getElementById('text-field').addEventListener('blur',function(){
+            console.log('bluring ');
+        })
+        document.getElementById('text-field').addEventListener('keydown',function(){
+            console.log(event.target.value);
+        })
+
+
+
+
+    </script>
+</body>
+</html>

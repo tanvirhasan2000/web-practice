@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> hi this is tanvir </h1>
+    <!-- Option 1: button on Html element -->
+    <button onclick="console.log(7)">click me </button>
+    <!-- Option 2: Directly on element -->
+    <button onclick="document.body.style.backgroundColor='yellow'"> Make yellow </button>
+     <!--Option 3: function create -->
+    <button onclick="makeRed()"> make red </button>
+    
+    <button id="make-blue">Make Blue</button>
+    <button id="purple">Make Purple</button>
+    <!-- Option 4 -->
+     <button id="make-pink">Make Pink</button>
+    
+     <button id="make-green"> Make Green </button>
+     <button id="make-golden">Make Golden</button>
+    <script src="events.js"></script>
+    <script>
+        // document.getElementById('make-golden').addEventListener('click',function(){})
+        document.getElementById('make-golden').addEventListener('click',function(){
+            document.body.style.backgroundColor='goldrod';
+        });
+
+        
+
+        
+    </script>
+</body>
+</html>

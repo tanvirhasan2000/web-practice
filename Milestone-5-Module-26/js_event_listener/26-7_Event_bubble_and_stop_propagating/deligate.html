@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Explole Event Deligate</h1>
+    <section>
+        <ul id="list-container">
+            <li class="item"> Lorem, ipsum dolor1.</li>
+            <li class="item"> Lorem, ipsum dolor2.</li>
+            <li class="item"> Lorem, ipsum dolor3.</li>
+            <li class="item"> Lorem, ipsum dolor4.</li>
+            <li class="item"> Lorem, ipsum dolor5.</li>
+
+        </ul>
+        <button id="btn-add-item">Add Item </button>
+    </section>
+    <script>
+        // const items = document.getElementsByClassName('item');
+        // for(const item of items){
+        //     item.addEventListener('click',function(event){
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+        document.getElementById('list-container').addEventListener('click',function(event){
+            event.target.parentNode.removeChild(event.target);
+        })
+        document.getElementById('btn-add-item').addEventListener('click',function(){
+            const list_item = document.createElement('li');
+            list_item.innerText='New Item ';
+            // giving the class name 
+            list_item.classList.add('item');
+            // accesing the whole list to add the item 
+            const listContainer = document.getElementById('list-container');
+            // put the item into the list . 
+            listContainer.appendChild(list_item); 
+
+        })
+
+        /* Done when watching video */ 
+        // document.getElementById('btn-add-item').addEventListener('click',function(){
+        //     const listContainer = document.getElementById('list-container');
+        //     const li = document.createElement('li');
+        //     li.className = 'item';
+        //     li.innerText='New Item Added';
+        //     listContainer.appendChild(li);
+
+        //     // li.addEventListener('click',function(event){
+        //     //     event.target.parentNode.removeChild(event.target);
+        //     // })
+        // })
+    </script>
+</body>
+</html>
