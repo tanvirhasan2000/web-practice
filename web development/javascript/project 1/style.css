@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+html{
+    font-size:62.5%;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Press Start 2p',sans-serif;
+    color:#eee;
+    background-color: #222;
+}
+header{
+    display:flex;
+    position:relative;
+    height:35vh;
+    border-bottom:7px solid #222;
+
+}
+main{
+    height:65vh;
+    color:#eee;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+.left{
+    width:52rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(34, 34, 34, 0.85);
+    border-radius: 2rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+.right {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(34, 34, 34, 0.75);
+    border-radius: 2rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+
+button, .btn {
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, #ff8c00 0%, #ff0080 100%);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: background 0.2s, transform 0.2s;
+}
+button:hover, .btn:hover {
+    background: linear-gradient(90deg, #ff0080 0%, #ff8c00 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+
+input, .input {
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    border: 2px solid #444;
+    border-radius: 1rem;
+    background: #111;
+    color: #eee;
+    outline: none;
+    transition: border 0.2s;
+}
+input:focus, .input:focus {
+    border: 2px solid #ff0080;
+}
+
+.score, .label-score {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ff8c00;
+    margin-bottom: 1rem;
+}
+.number{
+    display: block;
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        height: auto;
+        gap: 3rem;
+    }
+    .left, .right {
+        width: 90vw;
+        padding: 2rem 1rem;
+    }
+}
