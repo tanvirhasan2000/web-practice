@@ -1,0 +1,8 @@
+cd d:\Web practice
+cmd /c "npm create vite@latest my-new-app -- --template react"
+
+cmd /c "cd /d ""d:\Web practice\Milestone-7\my-react-app"" && npm run dev"
+
+cmd /c "cd /d ""d:\Web practice\Milestone-7\
+my-react-app"" 
+&& npm run dev -- --host 0.0.0.0"

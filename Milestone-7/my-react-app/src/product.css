@@ -1,0 +1,11 @@
+.product {
+    border: 1px solid black;
+    margin-bottom: 15x;
+    border-radius: 14px;
+    /* padding: 0px 10px 0 10px; */
+    margin-left:15px;
+    margin-bottom:15px;
+    margin-top:20px;
+    width: 200px;
+    height: 160px;
+}
