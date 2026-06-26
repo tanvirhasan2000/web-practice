@@ -10,11 +10,18 @@ import LudoBoard from './Ludo/LudoBoard.jsx'
 import TodoList from './working/TodoList.jsx'
 import Lottery from './working/Lottery/Lottery.jsx'
 import TickitNum from './working/tickit/TickicNum.jsx'
+import TicketNum from './working/Tickit2/TicketNum.jsx'
+import Ticket from './working/Tickit2/Ticket.jsx'
+import LotteryMain from './working/Tickit2/LotteryMain.jsx'
+import {sum} from "./working/Tickit2/helper.js"
 function App() {  
+  let winCondition=(ticket)=>{
+    return ticket.every((num)=>num===ticket[0]);
+  }
+
   return (
     <div>
-      <h1>States in React </h1>
-      <TickitNum num={5}/>
+      <LotteryMain n={4} winCondition={winCondition}/>
     </div>
   )
 }

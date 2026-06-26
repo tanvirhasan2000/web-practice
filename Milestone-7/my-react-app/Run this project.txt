@@ -6,3 +6,6 @@ cmd /c "cd /d ""d:\Web practice\Milestone-7\my-react-app"" && npm run dev"
 cmd /c "cd /d ""d:\Web practice\Milestone-7\
 my-react-app"" 
 && npm run dev -- --host 0.0.0.0"
+
+
+cmd /c "cd /d ""D:\Web practice\Milestone-7\React_2\react-app"" && npm run dev -- --host 0.0.0.0"
