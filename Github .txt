@@ -1,0 +1,9 @@
+git add -A
+git commit -m "Your commit message here"
+git push
+
+What each does:
+
+git add -A — Stages all your changes
+git commit -m "message" — Commits them with a description
+git push — Uploads to GitHub

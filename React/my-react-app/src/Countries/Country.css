@@ -1,0 +1,15 @@
+.card{
+    margin:2opx;
+    border:3px solid red;
+    border-radius: 20px;
+    padding:20px;
+    /* height:110px;
+    width: 110px; */
+}
+/* img{
+    height:100x;
+    width:100px;
+} */
+ .country-visited{
+    background-color: aquamarine;
+ }

@@ -1,0 +1,5 @@
+.Bottles{
+    display:grid;
+    grid-template-columns: repeat(3,4fr );
+    gap:10px;
+}
